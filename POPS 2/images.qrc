@@ -1,0 +1,43 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/program.png</file>
+        <file>images/inventory.png</file>
+        <file>images/purchase.png</file>
+        <file>images/search.ico</file>
+        <file>images/stock_seal_save.png</file>
+        <file>images/proseal.png</file>
+        <file>images/stock_adjust.png</file>
+        <file>images/barcode.png</file>
+        <file>images/down.png</file>
+        <file>images/key.png</file>
+        <file>images/lock.png</file>
+        <file>images/up.png</file>
+        <file>images/print.png</file>
+        <file>images/open.png</file>
+        <file>images/modify.png</file>
+        <file>images/delete.png</file>
+        <file>images/vip.png</file>
+        <file>images/document_xls.png</file>
+        <file>images/birthday.png</file>
+        <file>images/Integraladjustment.png</file>
+        <file>images/sort.png</file>
+        <file>images/showall.png</file>
+        <file>images/ok.png</file>
+        <file>images/save.png</file>
+        <file>images/start.jpg</file>
+        <file>images/background.jpg</file>
+        <file>images/seals_statistics.png</file>
+        <file>images/VIP_manage.png</file>
+        <file>images/add.png</file>
+        <file>images/black.css</file>
+        <file>images/calendar.ico</file>
+        <file>images/clock128.ico</file>
+        <file>images/data128128.ico</file>
+        <file>images/dele.png</file>
+        <file>images/email12828.ico</file>
+        <file>images/find.png</file>
+        <file>images/log.png</file>
+        <file>images/open (2).png</file>
+        <file>images/png-0011.png</file>
+    </qresource>
+</RCC>

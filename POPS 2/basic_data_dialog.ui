@@ -1,0 +1,1812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Basic_Data_Dialog</class>
+ <widget class="QWidget" name="Basic_Data_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>733</width>
+    <height>489</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/images/background.jpg);</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>581</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>579</width>
+      <height>449</height>
+     </rect>
+    </property>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>561</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>6</number>
+     </property>
+     <widget class="QWidget" name="Categoriy_Page">
+      <widget class="QTableView" name="Category_tableView">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>331</width>
+         <height>311</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>361</x>
+         <y>41</y>
+         <width>80</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>类别名称：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Category_Name_lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>361</x>
+         <y>69</y>
+         <width>118</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>361</x>
+         <y>99</y>
+         <width>112</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>上级所属类别：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Category_Class_lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>361</x>
+         <y>126</y>
+         <width>118</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Add_Category_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>51</x>
+         <y>358</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Modify_Category_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>132</x>
+         <y>358</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Save_Category_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>213</x>
+         <y>358</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Cancel_Category_pushButton_">
+       <property name="geometry">
+        <rect>
+         <x>294</x>
+         <y>358</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Delete_Category_pushButton_">
+       <property name="geometry">
+        <rect>
+         <x>375</x>
+         <y>358</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Color_page">
+      <widget class="QTableView" name="Color_tableView">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>511</width>
+         <height>311</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>336</y>
+         <width>60</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>颜色名称：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Color_Name_lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>226</x>
+         <y>332</y>
+         <width>191</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Cancel_Color_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>338</x>
+         <y>369</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Modify_Color_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>370</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Delete_Color_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>431</x>
+         <y>369</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Add_Color_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>71</x>
+         <y>372</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Save_Color_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>247</x>
+         <y>369</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Unit_page">
+      <widget class="QTableView" name="Unit_tableView">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>511</width>
+         <height>281</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Save_Unit_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>248</x>
+         <y>374</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Cancle_Unit_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>347</x>
+         <y>373</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Delete_Unit_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>443</x>
+         <y>371</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Add_Unit_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>376</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Modify_Unit_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>152</x>
+         <y>375</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>127</x>
+         <y>324</y>
+         <width>60</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>单位名称：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Unit_Name_lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>194</x>
+         <y>321</y>
+         <width>211</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Auto_page">
+      <widget class="QTableView" name="Auto_tableView">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>1</y>
+         <width>541</width>
+         <height>201</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Add_Unit_pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>63</x>
+         <y>371</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Modify_Unit_pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>144</x>
+         <y>371</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Save_Unit_pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>225</x>
+         <y>371</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Cancle_Unit_pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>306</x>
+         <y>371</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Delete_Unit_pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>387</x>
+         <y>371</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>21</x>
+         <y>213</y>
+         <width>72</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>原计量单位：</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="Original_comboBox">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>214</y>
+         <width>80</width>
+         <height>18</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>291</x>
+         <y>213</y>
+         <width>84</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>目标计量单位：</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="Goal_comboBox">
+       <property name="geometry">
+        <rect>
+         <x>381</x>
+         <y>214</y>
+         <width>80</width>
+         <height>18</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>21</x>
+         <y>242</y>
+         <width>318</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>数量为1的原计量单位的商品可拆为目标计量单位商品数量：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_6">
+       <property name="geometry">
+        <rect>
+         <x>348</x>
+         <y>242</y>
+         <width>140</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_3">
+       <property name="geometry">
+        <rect>
+         <x>348</x>
+         <y>270</y>
+         <width>140</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>21</x>
+         <y>270</y>
+         <width>72</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>原商品条码：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>270</y>
+         <width>140</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>258</x>
+         <y>270</y>
+         <width>84</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>目标商品条码：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>21</x>
+         <y>300</y>
+         <width>72</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>原商品名称：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_5">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>300</y>
+         <width>140</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>258</x>
+         <y>300</y>
+         <width>84</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>目标商品名称：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_4">
+       <property name="geometry">
+        <rect>
+         <x>348</x>
+         <y>300</y>
+         <width>140</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>21</x>
+         <y>328</y>
+         <width>168</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>拆包时检查原商品的匹配方式：</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>195</x>
+         <y>328</y>
+         <width>186</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <item>
+        <property name="text">
+         <string>指定单位和指定条码</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>指定单位和自动查找相同产品</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>指定单位和指定商品名称</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Supplier_Page">
+      <widget class="QTableView" name="Supplier_tableView">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>551</width>
+         <height>231</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_9">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>279</y>
+         <width>118</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_7">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>250</y>
+         <width>118</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_11">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>311</y>
+         <width>118</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>61</x>
+         <y>250</y>
+         <width>36</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>名称：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>61</x>
+         <y>279</y>
+         <width>36</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>地址：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>61</x>
+         <y>311</y>
+         <width>60</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>电子邮件：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>341</x>
+         <y>253</y>
+         <width>48</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>联系人：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_8">
+       <property name="geometry">
+        <rect>
+         <x>395</x>
+         <y>253</y>
+         <width>118</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>341</x>
+         <y>283</y>
+         <width>36</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>电话：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_10">
+       <property name="geometry">
+        <rect>
+         <x>395</x>
+         <y>283</y>
+         <width>118</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>61</x>
+         <y>344</y>
+         <width>36</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>备注：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_12">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>341</y>
+         <width>371</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Add_Unit_pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>94</x>
+         <y>376</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Modify_Unit_pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>175</x>
+         <y>376</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Save_Unit_pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>256</x>
+         <y>376</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Cancle_Unit_pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>337</x>
+         <y>376</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Delete_Unit_pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>418</x>
+         <y>376</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Vip_Type_page">
+      <widget class="QTableView" name="tableView">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>551</width>
+         <height>281</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>287</x>
+         <y>336</y>
+         <width>151</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>0-1之间的小数。比如0.85</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Add_Vip_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>71</x>
+         <y>375</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Modify_Vip_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>152</x>
+         <y>375</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Save_Vip_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>233</x>
+         <y>375</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Cancle_Vip_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>314</x>
+         <y>375</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Delete_Vip_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>395</x>
+         <y>375</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>91</x>
+         <y>298</y>
+         <width>60</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>类别名称：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Vip_Name_lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>157</x>
+         <y>295</y>
+         <width>118</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>91</x>
+         <y>332</y>
+         <width>60</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>默认折扣：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Discounts_lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>157</x>
+         <y>332</y>
+         <width>118</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Adjust_page">
+      <widget class="QTableView" name="Adjust_tableView">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>551</width>
+         <height>291</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_23">
+       <property name="geometry">
+        <rect>
+         <x>199</x>
+         <y>328</y>
+         <width>60</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>类别名称：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Adjust_Name_lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>265</x>
+         <y>324</y>
+         <width>118</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Add_Adjust_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>81</x>
+         <y>362</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Modify_Adjust_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>162</x>
+         <y>362</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Save_Adjust_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>243</x>
+         <y>362</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Cancle_Adjust_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>324</x>
+         <y>362</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Delete_Adjust_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>405</x>
+         <y>362</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Allocation_page">
+      <widget class="QTableView" name="Allocation_tableView">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>10</y>
+         <width>561</width>
+         <height>281</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>131</x>
+         <y>323</y>
+         <width>120</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>对方公司或店铺名称：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Allocation_lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>257</x>
+         <y>321</y>
+         <width>118</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Add_Allocation_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>81</x>
+         <y>362</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Modify_Allocation_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>162</x>
+         <y>362</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Save_Allocation_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>243</x>
+         <y>362</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Cancle_Allocation_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>324</x>
+         <y>362</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Delete_Allocation_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>405</x>
+         <y>362</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Brand_page">
+      <widget class="QTableView" name="Brand_tableView">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>481</width>
+         <height>261</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>312</y>
+         <width>60</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent</string>
+       </property>
+       <property name="text">
+        <string>品牌名称：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>309</y>
+         <width>118</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Add_Brand_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>41</x>
+         <y>354</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Modify_Brand_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>122</x>
+         <y>354</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Save_Brand_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>203</x>
+         <y>354</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Cancel_Brand_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>284</x>
+         <y>354</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Delete_Brand_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>365</x>
+         <y>354</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+       </property>
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea_2">
+   <property name="geometry">
+    <rect>
+     <x>599</x>
+     <y>30</y>
+     <width>121</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>119</width>
+      <height>449</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>8</y>
+       <width>101</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QPushButton" name="Brand_pushButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+        </property>
+        <property name="text">
+         <string>品牌管理</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Categoriy_pushButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+        </property>
+        <property name="text">
+         <string>类别管理</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Color_pushButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px</string>
+        </property>
+        <property name="text">
+         <string>颜色管理</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Unit_pushButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+        </property>
+        <property name="text">
+         <string>计量单位</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Auto_pushButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+        </property>
+        <property name="text">
+         <string>自动拆包</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Supplier_pushButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+        </property>
+        <property name="text">
+         <string>供货商管理</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="VIP_pushButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+        </property>
+        <property name="text">
+         <string>VIP会员类别</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Adjust_pushButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+        </property>
+        <property name="text">
+         <string>库存调整类别</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Allocation_pushButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 2px groove gray; border-radius: 10px; padding: 2px 4px</string>
+        </property>
+        <property name="text">
+         <string>库存调拨对象</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="Title_label">
+   <property name="geometry">
+    <rect>
+     <x>279</x>
+     <y>10</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
